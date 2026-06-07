@@ -69,3 +69,12 @@ services:
     restart: unless-stopped
     depends_on:
       - postgres
+
+volumes:
+  postgres_data:
+  mongo_data:
+  rabbitmq_data:
+  pgadmin_data:
+
+networks:
+  api-monitoring-network:
